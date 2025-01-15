@@ -1,0 +1,99 @@
+body{
+ text-align: center;
+ font-family: sans-serif;
+ background: linear-gradient(0deg, rgba(0,100,0,1) 0%, rgba(50,205,50,1) 100%);
+ /*cursor: wait;*/
+ height: 95vh;
+}
+.texte{
+	display: flex;
+ 	flex-direction: row;
+	justify-content: space-around;
+	/*margin-top: 5%;*/
+	background-color: floralwhite;
+	box-shadow: floralwhite 0px 0px 30px 30px;
+	width: 100%;
+	z-index: 10;
+}
+table{
+background-color: floralwhite;
+margin: auto;
+position: relative;
+border: black 2px solid;
+}
+td{
+padding: 5px 0 5px 0;
+border: black 2px solid;
+}
+.ap>td{
+	background-color: gold ;
+	padding: 10px 10px 10px 10px;
+	border: none;
+}
+th{
+	padding-top: 20px;
+}
+th:nth-child(2){
+	padding: 0 10px 0 10px;
+}
+img{
+	z-index: 2;
+	position: relative;
+	transform: translate(70%, 12%);
+}
+.texte> p{
+	width: 400px;
+	margin: 50px 0px 50px 0px;
+	font-size: 14pt;
+}
+em{
+	background-color: gold;
+	font-style: normal;
+	color: black;
+}
+header> div{
+	box-shadow: darkgreen 0px 0px 30px 30px;
+	background-color: darkgreen ;
+	color: white;
+}
+header>.glyph{
+	font-size: 15pt;
+	transform: rotate();
+}
+header, footer{
+	font-size: 11pt;
+		width: 100vw;
+}
+footer{
+	position : fixed;
+	bottom: 0;
+	background-color: white;
+	box-shadow: white 0px 0px 30px 30px;
+
+}
+
+@media screen and (max-width: 770px) {
+	body{
+padding-bottom: 300px;
+	}
+main{
+ 	flex-direction: column;
+}
+main > p{
+	margin: 10px auto 10px auto;
+}
+img{
+
+	transform: translate(20%, 12%);
+}
+
+}
+@media screen and (max-width: 420px) {
+main > p{
+	margin: 15px auto 15px auto;
+	width: 80vw;
+}
+header, footer{
+		width: 95vw;
+}
+}
